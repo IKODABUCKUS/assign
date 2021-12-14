@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet"  type="text/css" href="assignment.css">
+    </link> 
+
+    <title> Expense Tracker App</title>
+  </head>
+  <body>
+    <div class="container">
+      <p id="error_msg"></p>
+      <div class="title">
+        <h1 class="title">
+          Expense Tracker <a href="#"><i class="fa fa-money"></i></a>
+        </h1>
+      </div>  
+          
+      <h3>New Record</h3>
+      <form id="form">
+        <div class="form-control">
+          <label for="text">Description <br /></label>
+          <input
+            type="text" 
+            id="text" 
+            onfocus="this.value=' ' "
+            placeholder="Enter text"
+          />
+        </div>           
+        <br/>
+        <div class="form-control'>
+          <label for="amount"> Amount(+/-) <br /> </label>
+          <input
+            type="number"
+            id="amount"
+            onfocus="this.value=' ' "
+            placeholder="Enter value"
+          />
+        </div>
+        <button class="btn">Add Transaction</button>
+      </form>       
+      <br />
+         
+      <div class="income-expense">
+        <div class="bg-light">
+          <h4>Income</h4>
+          <p class="income" id="income">Rs0.00</p>
+        </div>
+        <div class="bg-light">
+          <h4>Spent</h4>
+          <p class="expense" id="expense">Rs0.00</p>
+        </div>
+        <div class="bg-light">
+          <h4>Balance</h4>
+          <p id="balance">Rs0.00</p>
+        </div>
+      </div>
+      <h3>History</h3>
+      <u1 id="list" class="list"></u1>
+    </div>
+    <script type="text/javascript" src="assignment.js"></script>     
+  </body>
+</html>
